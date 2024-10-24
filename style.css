@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+
+}
+@media screen and (max-width: 350px) {
+    *{
+        font-size: 20px;
+    }
+    .input{
+        font-size: 12px !important;
+    }   
+}
+.flex-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.padding{
+    padding: 5px;
+}
+
+
+
+
+.login{
+    border: 2px solid gray;
+    border-radius: 7px;
+    max-width: 8em;
+    margin: 20px auto;
+    padding: 10px; 
+    background-color: rgba(254, 254, 254, 0.482);
+    filter: opacity(1.6px);
+}
+.input{
+    border: 2px solid rgb(0, 94, 255);
+    border-radius: 30px;
+    max-width: 90%;
+    background-color: rgba(255, 255, 255, 0.464);
+    padding: 6px 0px 6px 5px;
+    font-size: 16px;
+
+}
+.btn{
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 76, 255, 0.789);
+    border: 2px solid rgba(0, 76, 255, 0.789);
+    border-radius: 30px;
+    padding: 12px 17px;
+    font-size: 16px;
+}
+body{
+    /* background-image: url(assets/favicons/love-you.gif); */
+    background-repeat: no-repeat;
+    background-position-y: 40%;
+    background-size: 75%;
+}
+.msg{
+    color: rgba(0, 76, 255, 0.789);
+    text-align: center;
+    background-image: url(assets/favicons/msgb.gif);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(240, 248, 255, 0);
+}
+.login_msg{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+.msg_links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    padding: 4px 12px;
+    gap: 20px;
+}
+.bth_sec{
+    background-color: rgba(41, 4, 134, 0.496);
+    max-width: 400px;
+    border: 1px solid;
+    border-radius: 12px;
+    margin:  20px auto;
+    display: none;
+}
+.dashboard-btn{
+    color: white;
+    background-color: rgb(71, 1, 136);
+    padding: 6px 16px;
+    border: 1px solid rgb(71, 1, 136);
+    border-radius: 12px;
+    text-decoration: none;
+
+}
