@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    background-color: #CAF0F8;
+}
+
+.p5{
+    padding: 5px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin: 2px;
+}
+
+.greet{
+    padding: 3px 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2{
+    font-size: 12px;
+}
+
+.status{
+    font-size: 10px;
+}
+
+h3{
+    color: #03045E;
+}
+
+.greet_img_div{
+    height: 40px;
+    width: 40px;
+    border-radius: 60px;
+    overflow: hidden;
+}
+
+.greet_img{
+    left: -23px;
+    position: relative;
+}
+
+.digital {
+    position: relative;
+    margin: auto;
+    width: 139px;
+    height: 50px;
+    border: 3px solid #0FA3B1;
+    box-shadow: inset 0px 0px 31px -6px #B5E2FA;
+    border-radius: 12px;
+    font-family: Quicksand, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#hours {
+    font-size: 20px;
+    color: #EDDEA4;
+    font-weight: 600;
+    position: absolute;
+    margin: 1px 6px;
+    padding: 0;
+    background-color: #b5e2fa00;
+}
+
+#minutes {
+    font-size: 20px;
+    color: #EDDEA4;
+    font-weight: 600;
+    margin: 0px 5px;
+    padding: 0;
+    position: absolute;
+    top: 22px;
+    background-color: #b5e2fa00;
+}
+
+#seconds {
+    font-size: 15px;
+    position: absolute;
+    bottom: 8px;
+    left: 39px;
+    color: #EDDEA4;
+}
+
+#date {
+    font-size: 13px;
+    position: absolute;
+    top: 2px;
+    left: 31px;
+    color: #F7A072;
+}
+
+#day {
+    font-size: 13px;
+    position: absolute;
+    top: 24px;
+    left: 63px;
+    color: #F7A072;
+}
+
+#month {
+    font-size: 13px;
+    position: absolute;
+    top: 2px;
+    left: 50px;
+    color: #F7A072;
+}
+
+#year {
+    color: #F7A072;
+    font-size: 13px;
+    position: absolute;
+    bottom: 32px;
+    left: 102px;
+}
+
+.upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#greet_change_msg{
+    transition: 500ms;
+    color: #03045E;
+    line-height: 40%;
+}
+
+.status_slide_btn{
+    width: 28px;
+    height: 11px;
+    border: 1px solid #0FA3B1;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0px 0px 7px -1px gray;
+    position: relative;
+}
+
+.status_slide_btn_dot{
+    width: 8px;
+    height: 8px;
+    border: 1px solid #0FA3B1;
+    background-color: #0FA3B1;
+    border-radius: 20px;
+    margin: auto;
+    position: absolute;
+    margin: 1px;
+    box-shadow: 0px 0px 7px 1px gray;
+}
+
+.status_slide_btn_dot_right{
+    right: 0px;
+}

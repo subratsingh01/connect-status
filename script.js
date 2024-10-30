@@ -26,13 +26,13 @@ function login() {
     userId = document.getElementById("username").value;
     password = document.getElementById("password").value;
     console.log(userId, password);
-    if (userId == "1" && password == "1") {
+    if (userId == "subrat" && password == "infinity") {
         alert("welcome subrat");
         adminLogin(); //in this function use fetch to get request and move on new page of admin
-    } else if (userId == "k" && password == "d") {
+    } else if (userId == "khushi" && password == "khushi123") {
         // alert("welcome khushi");
         khushiDummy();
-    } else if (userId == "k" && password == "k") {
+    } else if (userId == "khushi" && password == "khushi5455") {
         // alert("welcome khushi use khushi123 for dummy sign in")
         khushiLogin();
     } else {
@@ -69,3 +69,15 @@ function khushiDummy() {
     const k_block = document.getElementById("khushi_block");
     k_block.style.display = "none";
 }
+
+document.getElementById("noti").addEventListener("click", () => {
+    
+    Notification.requestPermission().then(parem => {
+        if (parem === "granted") {
+           new Notification("hi", {
+            body: {hello: "this is body of notification"}
+           })
+        }
+    })
+
+})
