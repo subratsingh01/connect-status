@@ -1,15 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Quicksand, Arial, Helvetica, sans-serif;
     background-color: #CAF0F8;
 }
 
-.p5{
+.p5 {
     padding: 5px;
 }
 
-.flex{
+.flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,33 +18,30 @@
     margin: 2px;
 }
 
-.greet{
+.greet {
     padding: 3px 7px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-h2{
+h2 {
     font-size: 12px;
 }
 
-.status{
+h3 {
+    color: #03045E;
     font-size: 10px;
 }
 
-h3{
-    color: #03045E;
-}
-
-.greet_img_div{
+.greet_img_div {
     height: 40px;
     width: 40px;
     border-radius: 60px;
     overflow: hidden;
 }
 
-.greet_img{
+.greet_img {
     left: -23px;
     position: relative;
 }
@@ -86,7 +83,7 @@ h3{
     position: absolute;
     bottom: 8px;
     left: 39px;
-    color: #EDDEA4;
+    color: #F7A072;
 }
 
 #date {
@@ -121,19 +118,19 @@ h3{
     left: 102px;
 }
 
-.upper{
+.upper {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#greet_change_msg{
+#greet_change_msg {
     transition: 500ms;
     color: #03045E;
     line-height: 40%;
 }
 
-.status_slide_btn{
+.status_slide_btn {
     width: 28px;
     height: 11px;
     border: 1px solid #0FA3B1;
@@ -144,7 +141,7 @@ h3{
     position: relative;
 }
 
-.status_slide_btn_dot{
+.status_slide_btn_dot {
     width: 8px;
     height: 8px;
     border: 1px solid #0FA3B1;
@@ -156,6 +153,106 @@ h3{
     box-shadow: 0px 0px 7px 1px gray;
 }
 
-.status_slide_btn_dot_right{
+.status_slide_btn_dot_right {
     right: 0px;
+}
+
+.status_msg {
+    font-size: 10px;
+}
+
+.emojies {
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 30px 30px 30px 30px;
+    grid-template-rows: 30px 30px 30px;
+    gap: 5px;
+}
+
+.emoji {
+    border: 1px solid #03045E;
+    border-radius: 5px;
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+    transition: 0.4s;
+    line-height: 25px;
+}
+
+.emoji:hover {
+    font-size: 20px;
+}
+
+.imoji_heading {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.upper {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.send_msg {
+    height: 75px;
+    width: 135px;
+    border: 1px solid #03045E;
+    margin-top: 5px;
+    border-radius: 5px;
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    column-gap: 7px;
+    /* flex-direction: column; */
+}
+
+#message_input {
+    font-size: 12px;
+    padding-left: 7px;
+    line-height: 20px;
+    border: 0px;
+    border-radius: 30px;
+    background-color: #cfcfcf91;
+}
+
+#message_input:focus {
+    outline: none;
+}
+
+#send_btn {
+    border: 1px solid #88888891;
+    border-radius: 5px;
+}
+
+#send_btn:focus {
+    outline: none;
+}
+
+.gallery {
+    max-width: 320px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+
+}
+
+.gallery_img {
+    max-width: 55px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery_div {
+    border: 1px solid #03045E;
+    border-radius: 3px;
+    height: 50px;
+    width: fit-content;
+    overflow: hidden;
 }
