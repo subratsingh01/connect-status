@@ -26,14 +26,12 @@ function login() {
     userId = document.getElementById("username").value;
     password = document.getElementById("password").value;
     console.log(userId, password);
-    if (userId == "subrat" && password == "infinity") {
+    if (userId == "Subrat" && password == "infinity") {
         alert("welcome subrat");
-        adminLogin(); //in this function use fetch to get request and move on new page of admin
-    } else if (userId == "khushi" && password == "khushi123") {
-        // alert("welcome khushi");
+        adminLogin();
+    } else if (userId == "Khushi" && password == "khushi123") {
         khushiDummy();
-    } else if (userId == "khushi" && password == "khushi5455") {
-        // alert("welcome khushi use khushi123 for dummy sign in")
+    } else if (userId == "Khushi" && password == "khushi5455") {
         khushiLogin();
     } else {
         alert("Invalid username or password");

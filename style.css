@@ -59,10 +59,10 @@
     font-size: 16px;
 }
 body{
-    background-image: url(assets/favicons/love-you.gif);
+    background-image: url(assets/favicons/background.jpg);
     background-repeat: no-repeat;
-    background-position-y: 40%;
-    background-size: 75%;
+    background-size: 180%;
+    background-position-x: center;
 }
 .msg{
     color: rgba(0, 76, 255, 0.789);
