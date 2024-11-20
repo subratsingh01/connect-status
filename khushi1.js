@@ -27,6 +27,7 @@ b1.addEventListener("click", () => {
     d5.classList.remove("status_slide_btn_dot_right");
     d6.classList.remove("status_slide_btn_dot_right");
     d7.classList.remove("status_slide_btn_dot_right");
+    study();
 })
 b2.addEventListener("click", () => {
     d1.classList.remove("status_slide_btn_dot_right");
@@ -36,6 +37,7 @@ b2.addEventListener("click", () => {
     d5.classList.remove("status_slide_btn_dot_right");
     d6.classList.remove("status_slide_btn_dot_right");
     d7.classList.remove("status_slide_btn_dot_right");
+    free();
 })
 b3.addEventListener("click", () => {
     d1.classList.remove("status_slide_btn_dot_right");
@@ -45,6 +47,7 @@ b3.addEventListener("click", () => {
     d5.classList.remove("status_slide_btn_dot_right");
     d6.classList.remove("status_slide_btn_dot_right");
     d7.classList.remove("status_slide_btn_dot_right");
+    missing_you();
 })
 b4.addEventListener("click", () => {
     d1.classList.remove("status_slide_btn_dot_right");
@@ -54,6 +57,7 @@ b4.addEventListener("click", () => {
     d5.classList.remove("status_slide_btn_dot_right");
     d6.classList.remove("status_slide_btn_dot_right");
     d7.classList.remove("status_slide_btn_dot_right");
+    waiting_call();
 })
 b5.addEventListener("click", () => {
     d1.classList.remove("status_slide_btn_dot_right");
@@ -63,6 +67,7 @@ b5.addEventListener("click", () => {
     d5.classList.add("status_slide_btn_dot_right");
     d6.classList.remove("status_slide_btn_dot_right");
     d7.classList.remove("status_slide_btn_dot_right");
+    waiting_message();
 })
 b6.addEventListener("click", () => {
     d1.classList.remove("status_slide_btn_dot_right");
@@ -72,6 +77,7 @@ b6.addEventListener("click", () => {
     d5.classList.remove("status_slide_btn_dot_right");
     d6.classList.add("status_slide_btn_dot_right");
     d7.classList.remove("status_slide_btn_dot_right");
+    busy();
 })
 b7.addEventListener("click", () => {
     d1.classList.remove("status_slide_btn_dot_right");
@@ -81,4 +87,28 @@ b7.addEventListener("click", () => {
     d5.classList.remove("status_slide_btn_dot_right");
     d6.classList.remove("status_slide_btn_dot_right");
     d7.classList.add("status_slide_btn_dot_right");
+    do_not_disturd();
 })
+
+
+function study() {
+
+};
+function free() {
+
+};
+function missing_you() {
+
+};
+function waiting_call() {
+
+};
+function waiting_message() {
+
+};
+function busy() {
+
+};
+function do_not_disturd() {
+
+};
