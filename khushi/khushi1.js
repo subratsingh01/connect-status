@@ -91,11 +91,8 @@ b7.addEventListener("click", () => {
 })
 
 
-function study() {
-
-};
 function free() {
-
+    fetch()
 };
 function missing_you() {
 
