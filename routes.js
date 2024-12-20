@@ -2,7 +2,7 @@ const Router = require('express');
 const router = Router();
 const { Main, login, message, status } = require("./mongo.js");
 
-// routes.use(express.json());
+router.use(Router.json());
 
 router.patch('/login_update', (req, res) => {
     const date = new Date();
@@ -92,6 +92,7 @@ router.patch('/status', (req, res) => {
                     }); 
                 }
             }
+            set_status(_id);
         } break;
         case "waiting_msg": {
             const set_status = async (_id) => {
@@ -106,6 +107,7 @@ router.patch('/status', (req, res) => {
                     }); 
                 }
             }
+            set_status(_id);
         } break;
         case "busy": {
             const set_status = async (_id) => {
@@ -120,6 +122,7 @@ router.patch('/status', (req, res) => {
                     }); 
                 }
             }
+            set_status(_id);
         } break;
         case "dnd": {
             const set_status = async (_id) => {
@@ -134,6 +137,7 @@ router.patch('/status', (req, res) => {
                     }); 
                 }
             }
+            set_status(_id);
         } break;
     };
 });
