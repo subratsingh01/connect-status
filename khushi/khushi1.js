@@ -92,11 +92,7 @@ b7.addEventListener("click", () => {
 
 function study() {
     fetch('https://swan-server.onrender.com/login_update', {
-        method: 'get',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ username: 'test', password: '1234' }),
+        method: 'PATCH',
     })
         .then((e) => console.log("done"))
         .catch( (error) => console.log(error))
