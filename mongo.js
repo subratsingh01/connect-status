@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-mongoose.connect("mongodb+srv://subratsingh:u8IEesh8Ay143SCF@cluster0.8fkuo.mongodb.net/Swan");
+mongoose.connect(process.env.MONGO_DB);
 
 const user_schema = new mongoose.Schema({
     hand_heart: Number,

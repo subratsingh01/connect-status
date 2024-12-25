@@ -4,6 +4,10 @@ const { Main, login, message, status } = require("./mongo.js");
 
 router.use(Router.json());
 
+router.get('/', (req, res) => {
+    res.status(200).send("hi");
+})
+
 router.patch('/login_update', (req, res) => {
     const date = new Date();
     const a = login.create({

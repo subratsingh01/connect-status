@@ -90,22 +90,38 @@ b7.addEventListener("click", () => {
     do_not_disturd();
 })
 
+function study() {
+    fetch('https://swan-server.onrender.com/login_update', {
+        method: 'get',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ username: 'test', password: '1234' }),
+    })
+        .then((e) => console.log("done"))
+        .catch( (error) => console.log(error))
+
+};
 
 function free() {
-    fetch()
+
 };
 function missing_you() {
 
 };
+
 function waiting_call() {
 
 };
+
 function waiting_message() {
 
 };
+
 function busy() {
 
 };
+
 function do_not_disturd() {
 
 };
