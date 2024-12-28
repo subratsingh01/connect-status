@@ -19,11 +19,17 @@
     <hr style="height: 3px; color: gray; background-color: gray;">
     <main class="main flex-col">
         <div class="login">
-            <form class="flex-col" action="">
-                <h2 class="flex-row padding">Sign In</h2>
-                <input size="40" class="input" id="username" type="text" placeholder="Enter Your Name" required>
-                <input size="40" class="input" id="password" type="password" placeholder="Enter Your Password" required>
-                <input class="btn" type="button" onclick="login()" value="Sign In">
+            <form class="flex-col" action="https://swan-server.onrender.com/login"
+                enctype="application/x-www-form-urlencoded" method="post">
+                <h2 class="flex-row padding">log in</h2>
+                <input size="40" class="input" id="username" name="username" type="text" placeholder="Enter Your Name"
+                    required>
+                <input size="40" class="input" id="password" name="password" type="password"
+                    placeholder="Enter Your Password" required>
+                <div style="display: flex; gap: 4px;">
+                    <input class="btn" type="submit" onclick="login()" value="Log in">
+                    <input class="btn" type="submit" onclick="login()" value="Sign up">
+                </div>
             </form>
         </div>
         <div class="msg">
@@ -52,7 +58,7 @@
                 <a href="https://api.whatsapp.com/send?phone=917905046490&text=Hi%20Subrat!" target="_blank">
                     <img height="30px" width="30px" src="./assets/whatsapp.svg" alt="whatsapp">
                 </a>
-                <a class="dashboard-btn" href="khushi/khushi.html" style="font-size: 16px;" >Dashboard</a>
+                <a class="dashboard-btn" href="khushi/khushi.html" style="font-size: 16px;">Dashboard</a>
             </div>
         </div>
     </section>
@@ -87,7 +93,7 @@
             </div>
         </div>
     </section>
-    </body>
+</body>
 <script src="app.js"></script>
 <script src="script.js"></script>
 
