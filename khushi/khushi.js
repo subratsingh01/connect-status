@@ -263,9 +263,9 @@ setInterval(() => {
 
 setTimeout(() => {
     if (currentTime.getHours() >= 6 && currentTime.getHours() < 12) {
-        document.getElementById("greet_change_msg").innerHTML = "Good Morning Taddy 💐"
+        document.getElementById("greet_change_msg").innerHTML = "Good Morning Babu 💐"
     } else if (currentTime.getHours() >= 12 && currentTime.getHours() < 17) {
-        document.getElementById("greet_change_msg").innerHTML = "Good Afternoon Motu 🌞"
+        document.getElementById("greet_change_msg").innerHTML = "Good Afternoon Taddy 🌞"
     } else if (currentTime.getHours() >= 17 && currentTime.getHours() < 21) {
         document.getElementById("greet_change_msg").innerHTML = "Good Evening Taddy 🌇"
     } else {

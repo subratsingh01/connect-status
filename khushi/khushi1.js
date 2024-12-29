@@ -1,3 +1,7 @@
+
+
+
+
 const b1 = document.getElementById("status_slide_btn1");
 const b2 = document.getElementById("status_slide_btn2");
 const b3 = document.getElementById("status_slide_btn3");
@@ -91,12 +95,10 @@ b7.addEventListener("click", () => {
 })
 
 function study() {
-    fetch('https://swan-server.onrender.com/login_update', {
-        method: 'PATCH',
-    })
-        .then((e) => console.log("done"))
-        .catch( (error) => console.log(error))
 
+    fetch('https://swan-server.onrender.com/', {
+        method: 'POST'
+    })
 };
 
 function free() {
