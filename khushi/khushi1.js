@@ -94,32 +94,132 @@ b7.addEventListener("click", () => {
     do_not_disturd();
 })
 
-function study() {
+function statusSuccess(value, statusType) {
+    switch (statusType) {
+        case "free":
+            
+            break;
+    
+        default:
+            break;
+    }
+}
 
-    fetch('https://swan-server.onrender.com/', {
-        method: 'POST'
+function study() {
+    fetch("https://swan-server.onrender.com/status_update?type=study", {
+        method: 'PATCH'
     })
+        .then(response => {
+            if (!response.ok) {
+                statusSuccess(0, "study");
+            }
+            else {
+                statusSuccess(1, "study");
+            }
+        })
+        .catch(error => {
+            console.log(error);
+        })
 };
 
 function free() {
-
+    fetch("https://swan-server.onrender.com/status_update?type=free", {
+        method: "PATCH"
+    })
+        .then(response => {
+            if (!response.ok) {
+                statusSuccess(0, "free");
+            }
+            else {
+                statusSuccess(1, "free");
+            }
+        })
+        .catch(error => {
+            console.log(error);
+        })
 };
-function missing_you() {
 
+function missing_you() {
+    fetch("https://swan-server.onrender.com/status_update?type=missing", {
+        method: "PATCH"
+    })
+        .then(response => {
+            if (!response.ok) {
+                statusSuccess(0, "missing");
+            }
+            else {
+                statusSuccess(1, "missing");
+            }
+        })
+        .catch(error => {
+            console.log(error);
+        })
 };
 
 function waiting_call() {
-
+    fetch("https://swan-server.onrender.com/status_update?type=waiting_call", {
+        method: "PATCH"
+    })
+        .then(response => {
+            if (!response.ok) {
+                statusSuccess(0, "waiting call");
+            }
+            else {
+                statusSuccess(1, "waiting call");
+            }
+        })
+        .catch(error => {
+            console.log(error);
+        })
 };
 
 function waiting_message() {
-
+    fetch("https://swan-server.onrender.com/status_update?type=waiting_msg", {
+        method: "PATCH"
+    })
+        .then(response => {
+            if (!response.ok) {
+                statusSuccess(0, "waiting msg")
+            }
+            else {
+                statusSuccess(1, "waiting msg")
+            }
+        })
+        .catch(error => {
+            console.log(error);
+        })
 };
 
 function busy() {
-
+    fetch("https://swan-server.onrender.com/status_update?type=busy", {
+        method: "PATCH"
+    })
+        .then(response => {
+            if (!response.ok) {
+                statusSuccess(0, "Busy")
+            }
+            else {
+                statusSuccess(1, "Busy")
+            }
+        })
+        .catch(error => {
+            console.log(error);
+        })
 };
 
 function do_not_disturd() {
-
+    fetch("https://swan-server.onrender.com/status_update?type=dnd", {
+        method: "PATCH"
+    })
+        .then(response => {
+            if (!response.ok) {
+                statusSuccess(0, "DND")
+            }
+            else {
+                statusSuccess(1, "DND")
+            }
+        })
+        .catch(error => {
+            console.log(error);
+        })
 };

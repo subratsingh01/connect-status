@@ -294,3 +294,27 @@ h3 {
     align-items: center;
     gap: 10px;
 }
+
+.alert {
+  min-height: 67px;
+  width: 560px;
+  max-width: 90%;
+  border-radius: 12px;
+  padding: 16px 22px 17px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.alert-success {
+  background: #12c99b;
+}
+
+.alert .icon__wrapper {
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.253);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
