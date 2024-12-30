@@ -9,12 +9,17 @@ function login() {
         khushiDummy();
     } else if (userId == "Khushi" && password == "khushi5455") {
         khushiLogin();
+        loginUpdate();
     } else {
         alert("Invalid username or password");
     }
 }
 
-
+function loginUpdate() {
+    fetch("https://swan-server.onrender.com/login_update", {
+        method: "POST"
+    })
+}
 
 
 function adminLogin() {

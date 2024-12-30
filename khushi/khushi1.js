@@ -1,6 +1,8 @@
-
-
-
+const galleryDiv = document.getElementById("gallery");
+const galleryBtn = document.getElementById("gallery_btn");
+galleryBtn.addEventListener("click", () => {
+    galleryDiv.classList.toggle("displayProperty");
+});
 
 const b1 = document.getElementById("status_slide_btn1");
 const b2 = document.getElementById("status_slide_btn2");
@@ -95,13 +97,20 @@ b7.addEventListener("click", () => {
 })
 
 function statusSuccess(value, statusType) {
-    switch (statusType) {
-        case "free":
-            
-            break;
-    
-        default:
-            break;
+    const alertBlock = document.getElementById("alert");
+    if (value == 0) {
+        alertBlock.innerHTML = `Fail to set status! Please try again.`
+        alertBlock.style.display = "block";
+        setTimeout((alertBlock) => {
+            alertBlock.style.display = "none";
+        }, 2000);
+    }
+    else {
+        alertBlock.innerHTML = `Status set to ${statusType} successfully.`
+        alertBlock.style.display = "block";
+        setTimeout(() => {
+            alertBlock.style.display = "none";
+        }, 2000);
     }
 }
 

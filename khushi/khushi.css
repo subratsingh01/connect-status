@@ -256,7 +256,7 @@ h3 {
     align-items: center;
     flex-wrap: wrap;
     gap: 5px;
-
+    display: none;
 }
 
 .gallery_img {
@@ -273,7 +273,7 @@ h3 {
     overflow: hidden;
 }
 
-.msg_links{
+.msg_links {
     width: 275px;
     display: flex;
     justify-content: space-evenly;
@@ -284,7 +284,7 @@ h3 {
     gap: 20px;
 }
 
-.login_msg{
+.login_msg {
     text-align: center;
     color: rgb(255, 255, 255);
     padding: 15px;
@@ -296,25 +296,44 @@ h3 {
 }
 
 .alert {
-  min-height: 67px;
-  width: 560px;
-  max-width: 90%;
-  border-radius: 12px;
-  padding: 16px 22px 17px 20px;
-  display: flex;
-  align-items: center;
+    line-height: 18px;
+    width: 275px;
+    max-width: 90%;
+    border-radius: 12px;
+    padding: 16px 22px 17px 20px;
+    align-items: center;
+    margin: auto;
+    background: #12c99b;
+    color: white;
+    transition: 1s;
+    display: none;
+}
+.bottom_btns {
+    height: 50px;
+    min-width: 100%;
+    border-radius: 14px 14px 0px 0px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    background: #0FA3B1;
+    position: fixed;
+    bottom: 0px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.alert-success {
-  background: #12c99b;
+.svg{
+    background-color: #0FA3B1;
 }
 
-.alert .icon__wrapper {
-  height: 34px;
-  width: 34px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.253);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.displayProperty{
+    display: flex;
+}
+
+.full_image{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
 }
