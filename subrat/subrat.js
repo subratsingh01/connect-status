@@ -110,3 +110,102 @@ function checkStatus() {
         });
 }
 
+
+function busySet() {
+    d1.classList.remove("status_slide_btn_dot_right");
+    d2.classList.remove("status_slide_btn_dot_right");
+    d3.classList.remove("status_slide_btn_dot_right");
+    d4.classList.remove("status_slide_btn_dot_right");
+    d5.classList.remove("status_slide_btn_dot_right");
+    d6.classList.add("status_slide_btn_dot_right");
+    d7.classList.remove("status_slide_btn_dot_right");
+}
+
+function dndSet() {
+    d1.classList.remove("status_slide_btn_dot_right");
+    d2.classList.remove("status_slide_btn_dot_right");
+    d3.classList.remove("status_slide_btn_dot_right");
+    d4.classList.remove("status_slide_btn_dot_right");
+    d5.classList.remove("status_slide_btn_dot_right");
+    d6.classList.remove("status_slide_btn_dot_right");
+    d7.classList.add("status_slide_btn_dot_right");
+}
+
+function freeSet() {
+    d1.classList.remove("status_slide_btn_dot_right");
+    d2.classList.add("status_slide_btn_dot_right");
+    d3.classList.remove("status_slide_btn_dot_right");
+    d4.classList.remove("status_slide_btn_dot_right");
+    d5.classList.remove("status_slide_btn_dot_right");
+    d6.classList.remove("status_slide_btn_dot_right");
+    d7.classList.remove("status_slide_btn_dot_right");
+}
+
+function missingSet() {
+    d1.classList.remove("status_slide_btn_dot_right");
+    d2.classList.remove("status_slide_btn_dot_right");
+    d3.classList.add("status_slide_btn_dot_right");
+    d4.classList.remove("status_slide_btn_dot_right");
+    d5.classList.remove("status_slide_btn_dot_right");
+    d6.classList.remove("status_slide_btn_dot_right");
+    d7.classList.remove("status_slide_btn_dot_right");
+}
+
+function studySet() {
+    d1.classList.add("status_slide_btn_dot_right");
+    d2.classList.remove("status_slide_btn_dot_right");
+    d3.classList.remove("status_slide_btn_dot_right");
+    d4.classList.remove("status_slide_btn_dot_right");
+    d5.classList.remove("status_slide_btn_dot_right");
+    d6.classList.remove("status_slide_btn_dot_right");
+    d7.classList.remove("status_slide_btn_dot_right");
+}
+
+function waiting_callSet() {
+    d1.classList.remove("status_slide_btn_dot_right");
+    d2.classList.remove("status_slide_btn_dot_right");
+    d3.classList.remove("status_slide_btn_dot_right");
+    d4.classList.add("status_slide_btn_dot_right");
+    d5.classList.remove("status_slide_btn_dot_right");
+    d6.classList.remove("status_slide_btn_dot_right");
+    d7.classList.remove("status_slide_btn_dot_right");
+}
+
+function waiting_msgSet() {
+    d1.classList.remove("status_slide_btn_dot_right");
+    d2.classList.remove("status_slide_btn_dot_right");
+    d3.classList.remove("status_slide_btn_dot_right");
+    d4.classList.remove("status_slide_btn_dot_right");
+    d5.classList.add("status_slide_btn_dot_right");
+    d6.classList.remove("status_slide_btn_dot_right");
+    d7.classList.remove("status_slide_btn_dot_right");
+}
+
+(() => {
+    fetch("https://swan-server.onrender.com/current_status")
+        .then(response => {
+            // Parse the JSON from the response
+            return response.json();
+        })
+        .then(data => {
+            if (data.busy == 1) {
+                busySet();
+            } else if (data.dnd == 1) {
+                dndSet();
+            } else if (data.free == 1) {
+                freeSet();
+            } else if (data.missing == 1) {
+                missingSet();
+            } else if (data.study == 1) {
+                studySet();
+            } else if (data.waiting_call == 1) {
+                waiting_callSet();
+            } else if (data.waiting_msg == 1) {
+                waiting_msgSet();
+            }
+        })
+        .catch(error => {
+            console.error("Error fetching status:", error);
+        });
+
+})()
