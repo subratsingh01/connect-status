@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Quicksand, Arial, Helvetica, sans-serif;
+    background-color: #CAF0F8;
+}
+
+.p5 {
+    padding: 5px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin: 2px;
+}
+
+
+.status_slide_btn {
+    width: 28px;
+    height: 11px;
+    border: 1px solid #0FA3B1;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0px 0px 7px -1px gray;
+    position: relative;
+}
+
+.status_slide_btn_dot {
+    width: 8px;
+    height: 8px;
+    border: 1px solid #0FA3B1;
+    background-color: #0FA3B1;
+    border-radius: 20px;
+    margin: auto;
+    position: absolute;
+    margin: 1px;
+    box-shadow: 0px 0px 7px 1px gray;
+}
+
+.status_slide_btn_dot_right {
+    right: 0px;
+}
+
+.status_msg {
+    font-size: 10px;
+}

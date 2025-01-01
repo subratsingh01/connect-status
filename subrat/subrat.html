@@ -4,9 +4,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Subrat Dashboard</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+</style>
+  <link rel="stylesheet" href="./subrat.css">
 </head>
 <body>
-  <h2>subrat page</h2>
-  <script src="assets/importandexport/i.js"></script>
+  <section class="status">
+    <h3 style="margin: auto; width: fit-content;">Current Status</h3>
+    <div class="study flex p5">
+        <span class="status_msg">
+            Study
+        </span>
+        <div id="status_slide_btn1" class="status_slide_btn">
+            <div id="status_slide_btn_dot1" class="status_slide_btn_dot"></div>
+        </div>
+    </div>
+    <div class="free flex p5">
+        <span class="status_msg">
+            Free
+        </span>
+        <div id="status_slide_btn2" class="status_slide_btn">
+            <div id="status_slide_btn_dot2" class="status_slide_btn_dot"></div>
+        </div>
+    </div>
+    <div class="miss flex p5">
+        <span class="status_msg">
+            Missing You!
+        </span>
+        <div id="status_slide_btn3" class="status_slide_btn">
+            <div id="status_slide_btn_dot3" class="status_slide_btn_dot"></div>
+        </div>
+    </div>
+    <div class="call flex p5">
+        <span class="status_msg">
+            Waiting for call!
+        </span>
+        <div id="status_slide_btn4" class="status_slide_btn">
+            <div id="status_slide_btn_dot4" class="status_slide_btn_dot"></div>
+        </div>
+    </div>
+    <div class="msg flex p5">
+        <span class="status_msg">
+            Waiting for message!
+        </span>
+        <div id="status_slide_btn5" class="status_slide_btn">
+            <div id="status_slide_btn_dot5" class="status_slide_btn_dot"></div>
+        </div>
+    </div>
+    <div class="busy flex p5">
+        <span class="status_msg">
+            Busy
+        </span>
+        <div id="status_slide_btn6" class="status_slide_btn">
+            <div id="status_slide_btn_dot6" class="status_slide_btn_dot"></div>
+        </div>
+    </div>
+    <div class="dnd flex p5">
+        <span class="status_msg">
+            Do Not Disturb
+        </span>
+        <div id="status_slide_btn7" class="status_slide_btn">
+            <div id="status_slide_btn_dot7" class="status_slide_btn_dot"></div>
+        </div>
+    </div>
+    <button style="margin: auto; width: fit-content; display: block; padding: 5px; border-radius: 30px; border: 1px solid black;" onclick="checkStatus()">Check Status</button>
+</section>
+<script src="subrat.js"></script>
+<script src="subrat1.js"></script>
 </body>
 </html>

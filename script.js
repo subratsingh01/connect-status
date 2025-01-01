@@ -21,6 +21,9 @@ function loginUpdate() {
     })
 }
 
+function signup() {
+    
+}
 
 function adminLogin() {
     const s_block = document.getElementById("subrat_block");
